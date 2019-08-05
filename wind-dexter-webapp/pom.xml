@@ -1,0 +1,164 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>cn.com.wind</groupId>
+    <artifactId>wind-dexter-parent</artifactId>
+    <version>2.1.0</version>
+    <relativePath>../wind-dexter-parent/pom.xml</relativePath>
+  </parent>
+  <artifactId>wind-dexter-webapp</artifactId>
+  <name>wind-dexter-webapp</name>
+  <dependencies>
+		<dependency>
+			<groupId>cn.com.wind</groupId>
+			<artifactId>wind-dexter-core</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>servlet-api-2.5</artifactId>
+					<groupId>org.mortbay.jetty</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency> 
+			<groupId>it.cnr.isti.hpc</groupId> 
+			<artifactId>dexter-tagme</artifactId> 
+			<version>2.1.0</version> 
+		</dependency> 
+		<dependency> 
+			<groupId>it.cnr.isti.hpc</groupId> 
+			<artifactId>dexter-wikiminer</artifactId> 
+			<version>2.0.0</version> 
+		</dependency> 
+		<dependency>
+			<groupId>cn.com.wind</groupId>
+			<artifactId>wind-json-wikipedia</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>cn.com.wind</groupId>
+			<artifactId>wind-dexter-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mapdb</groupId>
+			<artifactId>mapdb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-queryparser</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-analyzers-common</artifactId>
+		</dependency>
+		<!-- primitive data structures -->
+		<dependency>
+			<groupId>it.unimi.dsi</groupId>
+			<artifactId>fastutil</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>it.unimi.dsi</groupId>
+			<artifactId>sux4j</artifactId>
+			<version>3.0.8</version>
+		</dependency>
+		<!-- nlp processing -->
+		<dependency>
+			<groupId>org.apache.opennlp</groupId>
+			<artifactId>opennlp-tools</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>simplenlg</groupId>
+			<artifactId>simplenlg</artifactId>
+		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.eclipse.jetty</groupId> -->
+		<!-- <artifactId>jetty-webapp</artifactId> -->
+		<!-- <version>9.0.4.v20130625</version> -->
+		<!-- <exclusions> -->
+		<!-- <exclusion> -->
+		<!-- <groupId>javax.servlet</groupId> -->
+		<!-- <artifactId>servlet-api</artifactId> -->
+		<!-- </exclusion> -->
+		<!-- </exclusions> -->
+		<!-- </dependency> -->
+		<dependency>
+			<groupId>org.99soft.semweb</groupId>
+			<artifactId>sameas4j</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-bundle</artifactId>
+			<version>1.12</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-servlet</artifactId>
+			<version>1.12</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.wordnik</groupId>
+			<artifactId>swagger-jersey-jaxrs_2.10</artifactId>
+			<version>1.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-server</artifactId>
+			<version>1.12</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-core</artifactId>
+			<version>1.12</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		
+		<!-- <dependency> -->
+		<!-- <groupId>com.sun.jersey.contribs</groupId> -->
+		<!-- <artifactId>jersey-spring</artifactId> -->
+		<!-- <version>1.12</version> -->
+		<!-- <exclusions> -->
+		<!-- <exclusion> -->
+		<!-- <groupId>javax.servlet</groupId> -->
+		<!-- <artifactId>servlet-api</artifactId> -->
+		<!-- </exclusion> -->
+		<!-- </exclusions> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>asm</groupId> -->
+		<!-- <artifactId>asm</artifactId> -->
+		<!-- <version>3.3.1</version> -->
+		<!-- </dependency> -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
